@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Ubuntu-light;
+  src: url("../assets/Fonts/Ubuntu/Ubuntu-Light.ttf");
+}
+@font-face {
+  font-family: Ubuntu-medium;
+  src: url("../assets/Fonts/Ubuntu/Ubuntu-Medium.ttf");
+}
+@font-face {
+  font-family: Ubuntu-regular;
+  src: url("../assets/Fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: Roboto-medium;
+  src: url("../assets/Fonts/Roboto/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: Inter;
+  src: url("../assets/Fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
+}
+/*   Colors  */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("../assets/images/desktop.png");
+  background-repeat: none;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 198, 117, 0.9568627451);
+  border-radius: 20px;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleX(80%);
+            transform: scaleX(80%);
+  }
+  35% {
+    opacity: 1;
+    -webkit-transform: scaleX(100%);
+            transform: scaleX(100%);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleX(80%);
+            transform: scaleX(80%);
+  }
+  35% {
+    opacity: 1;
+    -webkit-transform: scaleX(100%);
+            transform: scaleX(100%);
+  }
+}
+/*  ============= NAVBAR ================ */
+.logo {
+  width: 70px;
+  height: 20px;
+}
+
+nav {
+  height: 4.25rem;
+  padding: 0 9rem;
+  background-color: rgba(38, 46, 57, 0.3764705882);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav ul {
+  list-style: none;
+  padding: 0.5rem;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 0.5rem;
+}
+nav ul li a:hover {
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  color: #8ac675;
+}
+
+/* =========================  HERO ==================== */
+.hero_wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 5rem 15rem;
+}
+.hero_wrapper .hero_text {
+  margin-top: 15%;
+}
+.hero_wrapper .hero_text .title {
+  font-family: Ubuntu-medium;
+  font-size: 4.5rem;
+  font-weight: 500;
+  background: linear-gradient(92deg, #8ac675 6.51%, rgba(64, 108, 170, 0.8156862745) 65.22%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero_wrapper .hero_text h3 {
+  font-family: Inter;
+  font-size: 3.5rem;
+  color: white;
+}
+.hero_wrapper .hero_text h4 {
+  font-family: Ubuntu-light;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 3rem;
+  color: #585858;
+}
+.hero_wrapper .buttons {
+  margin-top: 3rem;
+}
+.hero_wrapper .buttons button:nth-of-type(2) {
+  background-color: transparent;
+  border: 2px solid #8ac675;
+  color: white;
+  margin-left: 2rem;
+}
+.hero_wrapper .buttons button {
+  background-color: #8ac675;
+  width: 150px;
+  height: 45px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.hero_wrapper .buttons button a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-family: Inter;
+}
+
+.skills_wrapper {
+  margin: 7rem 0;
+}
+.skills_wrapper .skills_box {
+  margin: 0 auto;
+  padding: 2.7rem;
+  width: 50%;
+  height: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(6.51%, rgba(88, 88, 88, 0.3450980392)), color-stop(65.22%, rgba(106, 106, 106, 0.1058823529)));
+  background: linear-gradient(to bottom, rgba(88, 88, 88, 0.3450980392) 6.51%, rgba(106, 106, 106, 0.1058823529) 65.22%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 20px;
+}
+.skills_wrapper .skills_box div i {
+  font-size: 2rem;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+.skills_wrapper .skills_box div img {
+  width: 50px;
+  height: 30px;
+}
+.skills_wrapper .skills_box div p {
+  margin-top: 0.6rem;
+  font-family: Inter;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #585858;
+  text-transform: uppercase;
+}
+
+#about_me {
+  height: auto;
+  padding: 5rem;
+}
+#about_me article .article_wrapper {
+  width: 50%;
+  margin: 0 auto;
+  padding: 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(6.51%, rgba(88, 88, 88, 0.3450980392)), color-stop(65.22%, rgba(106, 106, 106, 0.1058823529)));
+  background: linear-gradient(to bottom, rgba(88, 88, 88, 0.3450980392) 6.51%, rgba(106, 106, 106, 0.1058823529) 65.22%);
+  border-radius: 20px;
+  -webkit-animation: fade 1s ease;
+          animation: fade 1s ease;
+  animation-timeline: view();
+}
+#about_me article .article_wrapper h3 {
+  font-family: Ubuntu-medium;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+#about_me article .article_wrapper h3::before {
+  content: "";
+  border: 2px solid #8ac675;
+  margin-right: 10px;
+}
+#about_me article .article_wrapper p {
+  font-family: Ubuntu-light;
+  font-size: 1.1rem;
+  color: white;
+  line-height: 2rem;
+}
+
+#projects {
+  height: auto;
+  padding: 3rem;
+  background: linear-gradient(92deg, #8ac675 6.51%, rgba(64, 108, 170, 0.8156862745) 65.22%);
+}
+#projects .title_section {
+  font-family: Ubuntu-medium;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  padding-top: 5rem;
+  -webkit-animation: fade 0.1s ease-out;
+          animation: fade 0.1s ease-out;
+  animation-timeline: view();
+}
+#projects h3::before {
+  content: "";
+  border: 2px solid #8ac675;
+  margin-right: 10px;
+}
+#projects .projects_wrapper {
+  margin: 0 auto;
+  padding: 2rem;
+  width: 70%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  -webkit-animation: fade 1s ease-out;
+          animation: fade 1s ease-out;
+  animation-timeline: view();
+}
+#projects .projects_wrapper .project_container {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.463);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.463);
+  border-radius: 20px;
+}
+#projects .projects_wrapper .project_container img {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+#projects .projects_wrapper .project_container .box_content {
+  background-color: rgba(0, 0, 0, 0.579);
+  border-radius: 0 0 20px 20px;
+  padding: 1rem;
+  min-height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Ubuntu-light;
+  color: white;
+}
+#projects .projects_wrapper .project_container .box_content .links {
+  margin-top: auto;
+  text-align: center;
+}
+#projects .projects_wrapper .project_container .box_content .links a {
+  font-size: 1.5rem;
+  color: #8ac675;
+  margin-left: 1rem;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+#projects .projects_wrapper .project_container .box_content .links a:hover {
+  color: white;
+}
+#projects .projects_wrapper .project_container h4 {
+  font-family: Ubuntu-medium;
+  -webkit-text-decoration: underline 2px #8ac675;
+          text-decoration: underline 2px #8ac675;
+  -webkit-text-decoration-skip-ink: 3px;
+          text-decoration-skip-ink: 3px;
+  margin-bottom: 1rem;
+}
+#projects .projects_wrapper .project_container p {
+  line-height: 1.4rem;
+  font-size: 0.8rem;
+}
+#projects .projects_wrapper .project_container span {
+  font-family: Ubuntu-regular;
+  text-transform: uppercase;
+}
+
+#contact {
+  margin: 8%;
+  height: auto;
+}
+#contact .title_section {
+  font-family: Ubuntu-medium;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  padding-bottom: 3rem;
+  -webkit-animation: fade 0.1s ease-out;
+          animation: fade 0.1s ease-out;
+  animation-timeline: view();
+}
+#contact .title_section:before {
+  content: "";
+  border: 2px solid #8ac675;
+  margin-right: 10px;
+}
+#contact .content {
+  margin: 0 auto;
+  color: white;
+  width: 50%;
+  padding: 5%;
+  border-radius: 20px;
+  background-color: rgba(91, 91, 91, 0.305);
+  display: grid;
+  line-height: 4rem;
+  -webkit-animation: fade 0.1s ease-out;
+          animation: fade 0.1s ease-out;
+  animation-timeline: view();
+}
+#contact i {
+  font-size: 2rem;
+  color: #8ac675;
+  margin-right: 2rem;
+}
+#contact h3 {
+  color: #8ac675;
+}
+#contact span, #contact a {
+  color: white;
+  font-family: Ubuntu-light;
+}
+
+footer p {
+  text-align: center;
+  color: #8ac675;
+  padding: 1rem;
+  font-family: Ubuntu-light;
+}
+
+.scroll_up {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  background-color: #8ac675;
+  padding: 0.5rem;
+  line-height: 15px;
+  border-radius: 5px;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+.scroll_up {
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite;
+}
