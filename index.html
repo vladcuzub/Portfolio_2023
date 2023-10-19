@@ -1,235 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <a href="#"><img src="./assets/images/mylogo1.png" class="logo" alt="logo"/></a>
-      <ul class="navbar-menu">
-        <li><a href="#about_me">Über mich</a></li>
-        <li><a href="#projects">Projekte</a></li>
-        <li><a href="#contact">Kontakt</a></li>
-      </ul>
-    </nav>
 
-    <main>
-      <section class="hero">
-        <div class="hero_wrapper">
-          <div class="hero_text">
-            <h1 class="title">Vlad Alexandru Cuzub</h1>
-            <h3>Frontend Entwickler</h3>
-            <h4>“Von Ideen zur interaktiven Realität”</h4>
-            <div class="buttons">
-            <button><a href="#projects">Meine Projekte</a></button>
-            <button><a href="#contact">Kontaktiere mich</a></button>
-          </div>
-          </div>
-          <img src="./assets/images/firstmockup.png" alt="mockup" />
-          
-        </div>
-        <div class="skills_wrapper">
-          <div class="skills_box">
-            <div>
-              <i class="fa-brands fa-html5"></i>
-              <p>Html5</p>
-            </div>
-            <div>
-              <i class="fa-brands fa-css3-alt"></i>
-              <p>Css</p>
-            </div>
-            <div>
-              <i class="fa-brands fa-sass"></i>
-              <p>Sass</p>
-            </div>
-            <div>
-              <img src="./assets/images/tail.png" alt="tailwind" />
-              <p>Tailwind</p>
-            </div>
-            <div>
-              <i class="fa-brands fa-square-js"></i>
-              <p>Javascript</p>
-            </div>
-            <div>
-              <i class="fa-brands fa-react"></i>
-              <p>React Js</p>
-            </div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+	<title>Portfolio</title>
+	<script defer src="./js/main.js"></script>
+</head>
 
-            <div>
-              <i class="fa-brands fa-git"></i>
-              <p>Git</p>
-            </div>
+<body>
+	<nav class="navbar">
+		<a href="#"><img src="./assets/images/mylogo1.png" class="logo" alt="Portfolio website logo" /></a>
+		<ul class="nav-list nav_desktop">
+			<li><a href="#about_me">Über mich</a></li>
+			<li><a href="#projects">Projekte</a></li>
+			<li><a href="#contact">Kontakt</a></li>
+		</ul>
 
-            <div>
-              <i class="fa-brands fa-github"></i>
-              <p>Github</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="about_me">
-        <article>
-          <div class="article_wrapper">
-            <h3>Über mich</h3>
-            <p>
-              Ich bin ein leidenschaftlicher Frontend-Entwickler aus Düsseldorf. Ich habe die IT-Welt vor einem Jahr entdeckt, als ich in meiner Freizeit neben meinem Vollzeitjob mit HTML, CSS und JavaScript zu arbeiten begann. Vor nicht allzu langer Zeit habe ich bemerkt, wie gut mir die Frontend-Entwicklung liegt. Deshalb habe ich mich entschieden, meine Fähigkeiten am Super-Code Bootcamp, einem Fullstack-Entwicklungsbootcamp, weiter auszubauen.<br /><br />
-              Worauf konzentriere ich mich während der Entwicklung? Zu meinen Prioritäten gehören responsives Design, das auf jedem Gerät gleich gut aussieht, Leistung, Benutzerfreundlichkeit, wiederverwendbarer Code, der leicht anzupassen und zu lesen ist. Ich habe hier einige Beispiele für Sie entwickelt. Wenn ich Ihr Interesse geweckt habe, würde ich mich freuen, von Ihnen einen Anruf zu erhalten, oder Sie können bequem über mein Kontaktformular eine Nachricht hinterlassen. Nach Erhalt Ihrer Nachricht werde ich mich innerhalb von 48 Stunden bei Ihnen melden."
-            </p>
-          </div>
-        </article>
-      </section>
+		<div class="menu-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</nav>
 
-      <section id="projects">
-        <h3 class="title_section">Meine Projekte</h3>
-        <div class="projects_wrapper">
-          <div class="project_container">
-            <img src="./assets/images/njetflix.png" alt="njetflix app" />
-            <div class="box_content">
-              <h4>Njetflix Movie App</h4>
-              <p>
-                Eine Anwendung zum Suchen von Filmen nach Namen und Kategorien. Die Möglichkeit, Ihre Lieblingsfilme zu
-                speichern und den Trailer anzusehen. Die Anmeldung/Registrierung ist noch nicht funktionsfähig.
-                -Teamprojekt
-              </p>
-              <br />
-              <p>benutzt : <span>REACT JS, SCSS</span></p>
-              <div class="links">
-                <a href="https://njetflix.netlify.app/"><i class="fa-solid fa-earth-americas"></i></a>
-                <a href="https://github.com/EmmoCodes/movie_app"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
+	<main>
+		<section class="hero">
+			<div class="hero_wrapper">
+				<div class="hero_text">
+					<h1 class="title">Vlad Alexandru Cuzub</h1>
+					<h2>Frontend Entwickler</h2>
+					<h3>“Von Ideen zur interaktiven Realität”</h3>
+					<div class="buttons_links">
+						<a class="btn_link" href="#projects">Meine Projekte</a>
+						<a class="btn_link href=" #contact">Kontaktiere mich</a>
+					</div>
+				</div>
+				<img class="mockup_img" src="./assets/images/firstmockup.avif" alt="computer mockup" />
 
-          <div class="project_container">
-            <img src="./assets/images/wetherapp.png" alt="Weather App" />
-            <div class="box_content">
-              <h4>Weather App</h4>
-              <p>
-                Eine Wetteranwendung, mit der Sie die Stadt durchsuchen können, um das aktuelle Wetter für 5 Tage
-                anzuzeigen
-              </p>
-              <br />
-              <p>benutzt : <span>HTML, CSS, JavaScript</span></p>
-              <div class="links">
-                <a href="https://vladcuzub.github.io/Weather_app/"><i class="fa-solid fa-earth-americas"></i></a>
-                <a href="https://github.com/vladcuzub/Weather_app"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
+			</div>
+			<div class="skills_wrapper">
+				<div class="skills_box">
+					<div>
+						<i class="fa-brands fa-html5"></i>
+						<p>Html5</p>
+					</div>
+					<div>
+						<i class="fa-brands fa-css3-alt"></i>
+						<p>Css</p>
+					</div>
+					<div>
+						<i class="fa-brands fa-sass"></i>
+						<p>Sass</p>
+					</div>
+					<div>
+						<img src="./assets/images/tail.png" alt="tailwind" />
+						<p>Tailwind</p>
+					</div>
+					<div>
+						<i class="fa-brands fa-square-js"></i>
+						<p>Javascript</p>
+					</div>
+					<div>
+						<i class="fa-brands fa-react"></i>
+						<p>React Js</p>
+					</div>
 
-          <div class="project_container">
-            <img src="./assets/images/sccisorgame.png" alt="Rock Paper Scissor" />
-            <div class="box_content">
-              <h4>Rock Paper Scissor</h4>
-              <p>
-                Dies ist ein Schere, Stein, Papier-Spiel, bei dem der Benutzer gegen den Computer in Runden von 5 bis 20
-                spielen kann. Wenn der Benutzer die Runden gewinnt, gewinnt er einen Geldregen.
-              </p>
-              <br />
-              <p>benutzt : <span>HTML, CSS, JavaScript</span></p>
-              <div class="links">
-                <a href="https://vladcuzub.github.io/rockPaperScissors_javascript/"
-                  ><i class="fa-solid fa-earth-americas"></i
-                ></a>
-                <a href="https://github.com/vladcuzub/rockPaperScissors_javascript"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
+					<div>
+						<i class="fa-brands fa-git"></i>
+						<p>Git</p>
+					</div>
 
-          <div class="project_container">
-            <img src="./assets/images/cocktail.png" alt="Cocktails & Getränke" />
-            <div class="box_content">
-              <h4>Cocktails & Getränke!</h4>
-              <p>
-                Dies ist eine Anwendung, in der der Benutzer nach seinen Lieblingscocktails suchen kann, sowohl nach
-                alkoholischen als auch nach alkoholfreien Zutaten. Jeder Cocktail enthält eine Liste von Zutaten.
-                -Teamprojekt
-              </p>
-              <br />
-              <p>benutzt : <span>React js</span></p>
-              <div class="links">
-                <a href="https://project-drinks-chill.netlify.app/"><i class="fa-solid fa-earth-americas"></i></a>
-                <a href="https://github.com/b-mat7/Project_Drinks_Chill"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
+					<div>
+						<i class="fa-brands fa-github"></i>
+						<p>Github</p>
+					</div>
+				</div>
+				<div class="skills_box">
+					<div>
+						<i class="fa-brands fa-html5"></i>
+						<p>Html5</p>
+					</div>
+					<div>
+						<i class="fa-brands fa-css3-alt"></i>
+						<p>Css</p>
+					</div>
+					<div>
+						<i class="fa-brands fa-sass"></i>
+						<p>Sass</p>
+					</div>
+					<div>
+						<img src="./assets/images/tail.png" alt="tailwind" />
+						<p>Tailwind</p>
+					</div>
+					<div>
+						<i class="fa-brands fa-square-js"></i>
+						<p>Javascript</p>
+					</div>
+					<div>
+						<i class="fa-brands fa-react"></i>
+						<p>React Js</p>
+					</div>
 
-          <div class="project_container">
-            <img src="./assets/images/lambo.png" alt="Lamborghini website" />
-            <div class="box_content">
-              <h4>Lamborghini Clone Website</h4>
-              <p>
-                Ein kleiner Klon der Lamborghini-Website, auf der der Benutzer einige Modelle sehen kann.
-              </p>
-              <br />
-              <p>benutzt : <span>Html, css,javascript</span></p>
-              <div class="links">
-                <a href="https://vladcuzub.github.io/Lamborghini-website/"
-                  ><i class="fa-solid fa-earth-americas"></i
-                ></a>
-                <a href="https://github.com/vladcuzub/Lamborghini-website"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
+					<div>
+						<i class="fa-brands fa-git"></i>
+						<p>Git</p>
+					</div>
 
-          <div class="project_container">
-            <img src="./assets/images/rom.png" alt="Lamborghini website" />
-            <div class="box_content">
-              <h4>Romania Tourism Website</h4>
-              <p>
-                Ein Tourismus-Präsentationswebsite, auf dem Sie sehen können, was Sie in Rumänien besichtigen können. Es
-                enthält die Möglichkeit, ein Hotel über Booking oder Airbnb zu buchen.
-              </p>
-              <br />
-              <p>benutzt : <span>Html, css,javascript</span></p>
-              <div class="links">
-                <a href="https://vladcuzub.github.io/RomaniaTourismWebsite/"
-                  ><i class="fa-solid fa-earth-americas"></i
-                ></a>
-                <a href="https://github.com/vladcuzub/RomaniaTourismWebsite"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+					<div>
+						<i class="fa-brands fa-github"></i>
+						<p>Github</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-      <section id="contact">
-        <h3 class="title_section">Kontaktiere mich</h3>
-        <div class="content">
-          <h3><i class="fa-solid fa-location-dot"></i>Standort: <span>Düsseldorf</span></h3>
-          <h3>
-            <i class="fa-regular fa-envelope"></i>Email:
-            <a href="mailto:vladalex1989@gmail.com">vladalex1989@gmail.com</a>
-          </h3>
-          <h3><i class="fa-solid fa-phone-volume"></i>Handy: <a href="tel:+49015166498659">015166498659</a></h3>
-          <h3>
-            <i class="fa-brands fa-github"></i>Github:
-            <a href="https://github.com/vladcuzub">https://github.com/vladcuzub</a>
-          </h3>
-          <h3>
-            <i class="fa-brands fa-linkedin"></i>Linkedin:
-            <a href="https://www.linkedin.com/in/vladcuzub/">https://www.linkedin.com/in/vladcuzub/</a>
-          </h3>
-          <h3>
-            <i class="fa-brands fa-instagram"></i>Instagram:
-            <a href="https://www.instagram.com/vladcuzub/">https://www.instagram.com/vladcuzub/</a>
-          </h3>
-        </div>
-      </section>
-      <a href="#" class="scroll_up"><i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i></a>
-      <footer><p>made by Vlad Alexandru Cuzub 2023</p></footer>
-    </main>
-  </body>
+		<section id="about_me">
+			<h3>Über mich</h3>
+			<article>
+				<div class="article_wrapper">
+					<p>
+						Ich bin ein leidenschaftlicher Frontend-Entwickler aus Düsseldorf. Ich habe die IT-Welt vor einem Jahr
+						entdeckt, als ich in meiner Freizeit neben meinem Vollzeitjob mit HTML, CSS und JavaScript zu arbeiten
+						begann. Vor nicht allzu langer Zeit habe ich bemerkt, wie gut mir die Frontend-Entwicklung liegt. Deshalb
+						habe ich mich entschieden, meine Fähigkeiten am Super-Code Bootcamp, einem Fullstack-Entwicklungsbootcamp,
+						weiter auszubauen.<br /><br />
+						Worauf konzentriere ich mich während der Entwicklung? Zu meinen Prioritäten gehören responsives Design,
+						das auf jedem Gerät gleich gut aussieht, Leistung, Benutzerfreundlichkeit, wiederverwendbarer Code, der
+						leicht anzupassen und zu lesen ist. Ich habe hier einige Beispiele für Sie entwickelt. Wenn ich Ihr
+						Interesse geweckt habe, würde ich mich freuen, von Ihnen einen Anruf zu erhalten, oder Sie können bequem
+						über mein Kontaktformular eine Nachricht hinterlassen. Nach Erhalt Ihrer Nachricht werde ich mich
+						innerhalb von 48 Stunden bei Ihnen melden."
+					</p>
+				</div>
+			</article>
+		</section>
+
+		<section id="projects">
+			<h3 class="title_section">Meine Projekte</h3>
+			<div class="projects_wrapper">
+			<div class="card">
+				<img src="./assets/images/njetflix.avif" alt="njetflix app" />
+				<div class="box_content">
+					<h4>Njetflix Movie App</h4>
+					<p>
+						Eine Anwendung zum Suchen von Filmen nach Namen und Kategorien. Die Möglichkeit, Ihre Lieblingsfilme zu
+						speichern und den Trailer anzusehen. Die Anmeldung/Registrierung ist noch nicht funktionsfähig.
+						-Teamprojekt
+					</p>
+					<br />
+					<p>benutzt : <span>REACT JS, SCSS</span></p>
+				</div>
+				<div class="links">
+					<a href="https://njetflix.netlify.app/"><i class="fa-solid fa-earth-americas"></i></a>
+					<a href="https://github.com/EmmoCodes/movie_app"><i class="fa-brands fa-github"></i></a>
+				</div>
+				
+			</div>
+
+			<div class="card">
+				<img src="./assets/images/wetherapp.avif" alt="Weather App" />
+					<div class="box_content">
+						<h4>Weather App</h4>
+						<p>
+							Eine Wetteranwendung, mit der Sie die Stadt durchsuchen können, um das aktuelle Wetter für 5 Tage
+							anzuzeigen
+						</p>
+						<br />
+						<p>benutzt : <span>HTML, CSS, JavaScript</span></p>
+					</div>
+					<div class="links">
+						<a href="https://vladcuzub.github.io/Weather_app/"><i class="fa-solid fa-earth-americas"></i></a>
+						<a href="https://github.com/vladcuzub/Weather_app"><i class="fa-brands fa-github"></i></a>
+					</div>
+			</div>
+
+			<div class="card">
+				<img src="./assets/images/sccisorgame.avif" alt="Rock Paper Scissor" />
+				<div class="box_content">
+					<h4>Rock Paper Scissor</h4>
+					<p>
+						Dies ist ein Schere, Stein, Papier-Spiel, bei dem der Benutzer gegen den Computer in Runden von 5 bis 20
+						spielen kann. Wenn der Benutzer die Runden gewinnt, gewinnt er einen Geldregen.
+					</p>
+					<br />
+					<p>benutzt : <span>HTML, CSS, JavaScript</span></p>
+				</div>
+				<div class="links">
+					<a href="https://vladcuzub.github.io/rockPaperScissors_javascript/"><i class="fa-solid fa-earth-americas"></i></a>
+					<a href="https://github.com/vladcuzub/rockPaperScissors_javascript"><i class="fa-brands fa-github"></i></a>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="./assets/images/cocktail.avif" alt="Cocktails & Getränke" />
+				<div class="box_content">
+					<h4>Cocktails & Getränke!</h4>
+					<p>
+						Dies ist eine Anwendung, in der der Benutzer nach seinen Lieblingscocktails suchen kann, sowohl nach
+						alkoholischen als auch nach alkoholfreien Zutaten. Jeder Cocktail enthält eine Liste von Zutaten.
+						-Teamprojekt
+					</p>
+					<br />
+					<p>benutzt : <span>React js</span></p>
+				</div>
+				<div class="links">
+					<a href="https://project-drinks-chill.netlify.app/"><i class="fa-solid fa-earth-americas"></i></a>
+					<a href="https://github.com/b-mat7/Project_Drinks_Chill"><i class="fa-brands fa-github"></i></a>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="./assets/images/lambo.avif" alt="Lamborghini website" />
+				<div class="box_content">
+					<h4>Lamborghini Clone Website</h4>
+					<p>Ein kleiner Klon der Lamborghini-Website, auf der der Benutzer einige Modelle sehen kann.</p>
+					<br />
+					<p>benutzt : <span>Html, css,javascript</span></p>
+				</div>
+				<div class="links">
+					<a href="https://vladcuzub.github.io/Lamborghini-website/"><i class="fa-solid fa-earth-americas"></i></a>
+					<a href="https://github.com/vladcuzub/Lamborghini-website"><i class="fa-brands fa-github"></i></a>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="./assets/images/rom.avif" alt="Tourism website" />
+				<div class="box_content">
+					<h4>Romania Tourism Website</h4>
+					<p>
+						Ein Tourismus-Präsentationswebsite, auf dem Sie sehen können, was Sie in Rumänien besichtigen können. Es
+						enthält die Möglichkeit, ein Hotel über Booking oder Airbnb zu buchen.
+					</p>
+					<br />
+					<p>benutzt : <span>Html, css,javascript</span></p>
+				</div>
+				<div class="links">
+					<a href="https://vladcuzub.github.io/RomaniaTourismWebsite/"><i class="fa-solid fa-earth-americas"></i></a>
+					<a href="https://github.com/vladcuzub/RomaniaTourismWebsite"><i class="fa-brands fa-github"></i></a>
+				</div>
+			</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			<h3 class="title_section">Kontaktiere mich</h3>
+			<div class="content">
+				<h4><i class="fa-solid fa-location-dot"></i><span>Düsseldorf</span></h4>
+				<h4>
+					<i class="fa-regular fa-envelope"></i>
+					<a href="mailto:vladalex1989@gmail.com">vladalex1989@gmail.com</a>
+				</h4>
+				<h4><i class="fa-solid fa-phone-volume"></i> <a href="tel:+49015166498659">015166498659</a></h4>
+				<h4>
+					<i class="fa-brands fa-github"></i>
+					<a href="https://github.com/vladcuzub">Github</a>
+				</h4>
+				<h4>
+					<i class="fa-brands fa-linkedin"></i>
+					<a href="https://www.linkedin.com/in/vladcuzub/">Linkedin</a>
+				</h4>
+				<h4>
+					<i class="fa-brands fa-instagram"></i>
+					<a href="https://www.instagram.com/vladcuzub/">Instagram</a>
+				</h4>
+			</div>
+		</section>
+
+		<footer>
+			<p>made by Vlad Alexandru Cuzub 2023</p>
+		</footer>
+	</main>
+</body>
+
 </html>
