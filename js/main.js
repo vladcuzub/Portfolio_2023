@@ -1,9 +1,16 @@
+const navbar = document.querySelector('.navbar')
 const menuBtn = document.querySelector('.menu-btn')
-const navLinks = document.querySelector('.nav-list')
+const linksBtn = document.querySelectorAll('.links_btn')
 
-if (menuBtn) {
-  menuBtn.addEventListener('click', () => {
+menuBtn.addEventListener('click', () => {
+  navbar.classList.toggle('open')
+  menuBtn.classList.toggle('active')
+})
+
+linksBtn.forEach(linkBtn => {
+  linkBtn.addEventListener('click', () => {
+    navbar.classList.toggle('open')
     menuBtn.classList.toggle('active')
-    navLinks.classList.toggle('active')
   })
-}
+})
+

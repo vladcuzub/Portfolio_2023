@@ -155,6 +155,7 @@ html {
 }
 
 .navbar {
+  padding: 0 1em;
   min-height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,22 +171,34 @@ html {
   overflow: hidden;
   -webkit-animation: slideIn 1.8s ease-in-out forwards;
           animation: slideIn 1.8s ease-in-out forwards;
-  position: relative;
 }
 .navbar .nav-list {
-  -webkit-transform: translateY(-200px);
-          transform: translateY(-200px);
-  -webkit-transition: 0.5s linear;
-  transition: 0.5s linear;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  z-index: 1250;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  background-color: black;
 }
 .navbar .nav-list li {
   line-height: 2.5rem;
@@ -195,19 +208,22 @@ html {
   color: white;
   text-transform: uppercase;
   padding: 0.5rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.navbar .nav-list a:hover {
+  color: #8ac675;
 }
 
-.nav-list.active {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  margin: 1rem 0;
-  display: block;
-  -webkit-transition: 0.5s linear;
-  transition: 0.5s linear;
+.open .nav-list {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .navbar .menu-btn {
   position: relative;
+  top: 0;
+  right: 0;
   border-radius: 8px;
   width: 50px;
   height: 50px;
@@ -222,6 +238,7 @@ html {
           align-items: center;
   cursor: pointer;
   overflow: hidden;
+  z-index: 999999;
 }
 .navbar .menu-btn span {
   position: absolute;
@@ -245,6 +262,11 @@ html {
   left: 10px;
 }
 
+.menu-btn.active {
+  position: fixed;
+  top: 10px;
+  right: 5px;
+}
 .menu-btn.active span:nth-child(1) {
   width: 40px;
   -webkit-transform: translateY(0px) rotate(45deg);
@@ -606,8 +628,31 @@ footer p {
   h3 {
     font-size: 25px;
   }
+  .navbar .nav-list {
+    position: initial;
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-transform: initial;
+            transform: initial;
+    -webkit-transition: initial;
+    transition: initial;
+  }
+  .navbar .menu-btn {
+    display: none;
+  }
 }
 @media screen and (min-width: 1200px) {
+  a {
+    font-size: 16px;
+  }
   h1 {
     font-size: 80px;
   }
@@ -620,8 +665,8 @@ footer p {
   body {
     font-size: 18px;
   }
-  .navbar .menu-btn {
-    display: none;
+  .navbar {
+    padding: 0 5em;
   }
   .hero_wrapper {
     height: 70vh;
