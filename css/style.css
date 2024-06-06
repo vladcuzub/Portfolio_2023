@@ -293,7 +293,7 @@ main .hero {
   margin: 2rem 0;
 }
 main .hero .mockup_img {
-  width: 100%;
+  width: 500px;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -668,7 +668,10 @@ footer p {
     height: 70vh;
     max-width: 1800px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1.5fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .hero_wrapper .hero_text {
     display: -webkit-box;
@@ -686,7 +689,7 @@ footer p {
             flex-direction: column;
   }
   .hero_wrapper .mockup_img {
-    max-width: 580px;
+    max-width: 680px;
   }
   .skills_wrapper {
     max-width: 1000px;
