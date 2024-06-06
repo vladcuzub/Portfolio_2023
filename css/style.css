@@ -34,14 +34,18 @@ h4 {
   font-weight: normal;
 }
 
-h1,
-h2 {
+h1 {
   font-size: 1.8em;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.3em;
+  color: #8ac675;
 }
 
 h3 {
-  font-size: 1.2em;
-  margin-top: 1em;
+  font-size: 1em;
 }
 
 h4 {
@@ -127,9 +131,9 @@ html {
 }
 @-webkit-keyframes slideH1 {
   0% {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0.5;
   }
   100% {
     -webkit-transform: translateY(0);
@@ -139,9 +143,9 @@ html {
 }
 @keyframes slideH1 {
   0% {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0.5;
   }
   100% {
     -webkit-transform: translateY(0);
@@ -206,7 +210,6 @@ html {
 .navbar .nav-list a {
   text-decoration: none;
   color: white;
-  text-transform: uppercase;
   padding: 0.5rem;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -299,24 +302,18 @@ main .hero .mockup_img {
   overflow-y: hidden;
 }
 main .hero_wrapper .hero_text {
-  margin: 2rem 0;
+  margin: 1rem 0;
   text-align: center;
 }
 main .hero_wrapper .hero_text .title {
-  background: linear-gradient(92deg, #8ac675 6.51%, #406caa 65.22%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: slideH1 1.8s ease-in forwards;
-          animation: slideH1 1.8s ease-in forwards;
+  -webkit-animation: slideH1 0.8s ease-in forwards;
+          animation: slideH1 0.8s ease-in forwards;
 }
 main .hero_wrapper .hero_text h2 {
-  line-height: 2.5rem;
   -webkit-animation: slideH1 2s ease-in forwards;
           animation: slideH1 2s ease-in forwards;
 }
 main .hero_wrapper .hero_text h3 {
-  line-height: 1.5rem;
   color: #585858;
   -webkit-animation: slideH1 2.4s ease-in forwards;
           animation: slideH1 2.4s ease-in forwards;
@@ -404,8 +401,7 @@ main .hero_wrapper .buttons_links .btn_link {
 .skills_wrapper .skills_box div p {
   font-weight: 300;
   font-size: 1rem;
-  color: #585858;
-  text-transform: uppercase;
+  color: white;
 }
 
 .skills_wrapper:before,
@@ -654,13 +650,13 @@ footer p {
     font-size: 16px;
   }
   h1 {
-    font-size: 80px;
-  }
-  h2 {
     font-size: 60px;
   }
+  h2 {
+    font-size: 40px;
+  }
   h3 {
-    font-size: 35px;
+    font-size: 25px;
   }
   body {
     font-size: 18px;
