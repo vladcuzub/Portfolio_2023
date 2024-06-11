@@ -227,7 +227,7 @@ main {
   .hero {
     margin: 2rem 0;
     .mockup_img {
-      width: 500px;
+      width: 300px;
       height: auto;
       display: block;
       margin: 0 auto;
@@ -543,6 +543,9 @@ footer p {
   .navbar .menu-btn {
     display: none;
   }
+  .mockup_img {
+      min-width: 450px;
+    }
 }
 
 // Desktop
@@ -578,7 +581,7 @@ footer p {
       flex-direction: column;
     }
     .mockup_img {
-      max-width: 680px;
+      min-width: 550px;
     }
   }
   .skills_wrapper {
